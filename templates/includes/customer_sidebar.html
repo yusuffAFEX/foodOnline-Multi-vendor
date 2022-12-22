@@ -1,0 +1,13 @@
+<div class="user-account-nav user-account-sidebar">
+    <div class="user-nav-list">
+        {% with url_name=request.resolver_match.url_name %}
+        <ul>
+            <li class="{% if url_name == 'customer_dashboard' or url_name == 'customerDashboard' %}active{% endif %}"><a href="{% url 'customer_dashboard' %}"><i class="icon-dashboard3"></i>Dashboard</a></li>
+            <li class="{% if url_name == 'customer_profile' %}active{% endif %}"><a href="{% url 'customer_profile' %}" class="btn-edit-profile"><i class="icon-build"></i>Profile Settings</a></li>
+            <li class="{% if url_name == 'my_orders' or url_name == 'order_details' %}active{% endif %}"><a href="{% url 'my_orders' %}" class="btn-edit-profile"><i class="icon-add_shopping_cart"></i>My Orders</a>
+            </li>
+            <li><a href="{% url 'logout' %}"><i class="icon-log-out"></i>Sign out</a></li>
+        </ul>
+        {% endwith %}
+    </div>
+</div>
