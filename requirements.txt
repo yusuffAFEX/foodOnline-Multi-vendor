@@ -1,5 +1,5 @@
 asgiref==3.5.2
-backports.zoneinfo==0.2.1
+backports.zoneinfo==0.2.1;python_version<"3.9"
 Django==4.1
 GDAL @ file:///C:/Users/YusuffAdekunleOyedel/PycharmProjects/foodOnline/GDAL-3.4.3-cp38-cp38-win_amd64.whl
 Pillow==9.2.0
